@@ -1,0 +1,600 @@
+/* pagina index */
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  background-color: rgb(0, 0, 0);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo .nombreNonpa {
+  margin-left: 20px;
+  color: yellow;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+}
+
+nav a {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  color: white;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+  a {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+@media (min-width: 375px) {
+  a {
+    font-weight: 700;
+    font-size: 10px;
+  }
+}
+.fotoNonpa {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+@media (min-width: 375px) {
+  .fotoNonpa {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+}
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+  color: yellow;
+  margin-top: 100px;
+  background-color: black;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+  }
+}
+.contenedorNoticias {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1080px) {
+  .contenedorNoticias {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.noticiasItem1 {
+  height: 500px;
+  width: 450px;
+  margin: 100px 30px;
+  margin-bottom: 100px;
+  border-radius: 10%;
+  box-shadow: 7px 13px 37px #000;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+@media (max-width: 700px) {
+  .noticiasItem1 {
+    height: 300px;
+    width: 250px;
+    margin: 10px 15px;
+  }
+}
+.noticiasItem1:hover {
+  width: 900px;
+}
+.noticiasItem1:hover img {
+  width: 800px;
+  height: 350px;
+  padding-bottom: 5px;
+}
+.noticiasItem1:hover p {
+  font-weight: 700;
+  font-size: 22px;
+}
+.noticiasItem1:hover a {
+  font-weight: 900;
+  font-size: 22px;
+}
+
+@media (max-width: 700px) {
+  .noticiasItem1:hover img {
+    width: 400px;
+    height: 200px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .noticiasItem1:hover p {
+    font-weight: 400;
+    font-size: 10px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .noticiasItem1:hover a {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+}
+.noticiasItem1 {
+  display: flex;
+  flex-direction: column;
+}
+.noticiasItem1 img {
+  padding-bottom: 80px;
+  margin: 20px;
+  width: 500px;
+  height: 300px;
+}
+.noticiasItem1 p {
+  color: yellow;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-align: justify;
+  margin: 0 10px;
+}
+.noticiasItem1 a {
+  width: 50%;
+  margin: 5px;
+  margin-top: 20px;
+  padding: 3px;
+  border-radius: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: yellow;
+  text-align: center;
+  justify-content: center;
+}
+
+/* pagina contacto */
+div h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 30px;
+}
+div h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5px;
+}
+div h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  div h2 {
+    font-weight: 400;
+    font-size: 40px;
+  }
+  div h3 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+  div h4 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+.formRegistro {
+  width: 400px;
+  background-color: black;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+@media (min-width: 375px) {
+  .formRegistro {
+    margin-top: 70px;
+    font-size: 10px;
+    width: 280px;
+  }
+}
+@media (min-width: 701px) {
+  .formRegistro {
+    width: 400px;
+  }
+}
+.formRegistro h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.formRegistro input {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+
+@media (min-width: 375px) {
+  .formRegistro h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .formRegistro input {
+    font-size: 10px;
+  }
+}
+.entrada {
+  color: white;
+  align-items: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 3px;
+  gap: 10px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .entrada {
+    font-size: 10px;
+  }
+}
+.controles {
+  width: 100%;
+  margin: 5px;
+  padding: 3px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .controles {
+    font-size: 10px;
+  }
+}
+.formRegistro .boton {
+  width: 100%;
+  background-color: yellow;
+  border-radius: 10px;
+  font-size: 16px;
+  align-content: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 8px;
+  color: black;
+  border: 5px solid yellow;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .formRegistro .boton {
+    font-size: 10px;
+  }
+}
+/* pagina historia */
+.fotoHistoria {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  .fotoHistoria {
+    margin-top: 15px;
+  }
+}
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.historia .contandoHistoria {
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.historia .contandoHistoria:hover {
+  background: radial-gradient(yellow, black);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  box-shadow: 7px 13px 37px #000;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .historia {
+    grid-template-columns: 1fr;
+  }
+}
+/* Footer */
+.footerContainer {
+  display: grid;
+  background-color: black;
+  padding: 30px;
+  justify-content: center;
+}
+
+.footerContainer .footeCaja {
+  display: flex;
+}
+
+.footerItem {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: yellow;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footerLogo img {
+  padding: 12px;
+  margin-left: 42px;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .footerItem {
+    font-size: 8px;
+  }
+}
+@media (max-width: 700px) {
+  .footerLogo img {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 25px;
+    height: auto;
+    padding: 5px;
+    margin-left: 18px;
+  }
+}
+/* Pagina Discografia */
+.Slider ul li a img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  margin-left: 100px;
+  margin: 20px;
+}
+
+@media (max-width: 700px) {
+  .Slider ul {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+  }
+  .Slider ul li {
+    width: 50%;
+  }
+  .Slider ul li a img {
+    width: 30%;
+    height: auto;
+  }
+}
+.Slider ul {
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+  width: 400%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Slider li {
+  list-style: none;
+  width: 100%;
+}
+.Slider a img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 700px) {
+  .Slider ul {
+    animation: none;
+    margin-left: 12 px;
+    margin-top: 30px;
+  }
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/* pagina show */
+.contenedorShow {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .contenedorShow {
+    display: grid;
+  }
+}
+@media (max-width: 700px) {
+  .showItem1 {
+    display: flex;
+    grid-template-columns: 1fr;
+    height: 250px;
+    width: 200px;
+  }
+}
+.showItem1 {
+  height: 500px;
+  width: 450px;
+  background-color: black;
+  margin: 100px 30px;
+  margin-bottom: 100px;
+  border-radius: 10%;
+  box-shadow: 7px 13px 37px #000;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showItem1::before {
+  content: "";
+  position: absolute;
+  height: 500px;
+  width: 450px;
+  background-image: conic-gradient(yellow 20deg, transparent 120deg);
+  animation: rotar 2s linear infinite;
+}
+
+@media (min-width: 375px), (max-width: 700px) {
+  .showItem1::before {
+    height: 250px;
+    width: 200px;
+    background-image: none;
+    animation: none;
+    position: relative;
+  }
+}
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.showItem1::after {
+  content: "";
+  position: absolute;
+  height: 490px;
+  width: 435px;
+  background-color: black;
+  border-radius: 10%;
+  box-shadow: inset 7px 13px 37px #000;
+}
+
+.showItem1 {
+  display: flex;
+  flex-direction: column;
+}
+.showItem1 img {
+  z-index: 2;
+  padding-bottom: 80px;
+}
+.showItem1 p {
+  z-index: 2;
+  color: yellow;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+.showItem1 .boton {
+  z-index: 2;
+  width: 50%;
+  margin: 5px;
+  margin-top: 20px;
+  padding: 3px;
+  background-color: yellow;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}/*# sourceMappingURL=main.css.map */
